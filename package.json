@@ -52,7 +52,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "homepage": "http://vesa193.github.io/react-todo-app",
+    "homepage": "https://vesa193.github.io/react-todo-app",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build"
   },
@@ -99,6 +99,6 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.2.0"
   }
 }

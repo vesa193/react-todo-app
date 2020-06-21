@@ -57,7 +57,7 @@ class TodoApp extends Component {
 				{
 					this.props.items.map((item, id) => {
 						return (
-							<li onClick={this.props.complete.bind(this, item.id)} style={style} className="list" key={item.id}>
+							<li /*onClick={this.props.complete.bind(this, item.id)}*/ style={style} className="list" key={item.id}>
 
 								{!item.isEditing ? item.text :
 									(<div className="edit-wrap">
@@ -76,7 +76,7 @@ class TodoApp extends Component {
 									</div>
 									)}
 								<div className="checkbox checkbox-success">
-									<input className="styled" type="checkbox" onChange={this.props.complete(item.id)} />
+									<input className="styled" type="checkbox" />
 								</div>
 
 								<img
